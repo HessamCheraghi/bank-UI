@@ -1,0 +1,27 @@
+{
+  "name": "bank-user-interface",
+  "version": "0.0.1",
+  "description": "A simple and elegant user interface for a fictional bank.",
+  "homepage": ".",
+  "source": "./index.html",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "parcel",
+    "build": "parcel build --public-url ."
+  },
+  "browserslist": "> 0.5%, not dead",
+  "keywords": [],
+  "author": "Hessam Cheraghi",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.5.0",
+    "@parcel/packager-xml": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.5.0",
+    "@parcel/transformer-xml": "^2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
